@@ -1,0 +1,11 @@
+<h1>Enter Your Favorite Song</h1>
+
+<%= simple_form_for @song do |f| %>
+  <%= f.input :title %> <br />
+  <%= f.input :artist %> <br />
+  <%= f.submit 'Submit' %>
+<% end %>
+
+<br />
+
+<%= link_to 'Best Songs List', root_path %>
