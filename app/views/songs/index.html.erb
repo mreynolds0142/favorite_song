@@ -1,1 +1,11 @@
 <h1>Best Songs of All Time</h1>
+
+<% @songs.each do |song| %>
+  <div>
+    <h1><%= song.title %></h1>
+    <h2>By:<%= song.artist %></h2>
+  </div>
+  <hr />
+<% end %>
+
+
